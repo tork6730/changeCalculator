@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="bower_components/animate/animate.css">
+
+	<meta charset="UTF-8">
+	<title>Change Calculator</title>
+</head>
+<body class= "container bg-success">
+<fieldset>
+	<h1 class="text-center">Change Calculator!</h1>
+		<form>
+		<div class="form-group">	
+			<div class="col-xs-6 bg-success">
+				<label class="lead">How much is due for the sale?</label>
+				<div class="form-group">
+	    				<label class="sr-only" for="exampleInputAmount">Amount</label>
+	    			<div class="input-group">
+	      				<div class="input-group-addon">$</div>
+	      				<input type="text" class="form-control" id="saleTotal" placeholder="Amount">
+	    			</div>
+	  			</div>
+			</div>
+			<div class="col-xs-6 bg-success">
+				<label class="lead">How much has the customer given you?</label>
+				<div class="form-group">
+    				<label class="sr-only" for="exampleInputAmount">Amount</label>
+    			<div class="input-group">
+      				<div class="input-group-addon">$</div>
+      				<input type="text" class="form-control" id="givenTotal" placeholder="Amount">
+    			</div>
+    			</div>
+
+			</div>
+		</div>
+			<div class="text-center">
+				<button type="button" id="button" class="btn btn-success">Show Me The Money!!!</button>
+			</div>
+		</form>	
+		<br>
+		<div class="">
+			<div class="text-center">
+				<label>Dollars</label>
+				<pre id = "dollarReturn"></pre>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<label>Quarters</label>
+					<pre id = "quarterReturn"></pre>
+				</div>
+				<div class="col-md-6">
+					<label>Dimes</label>
+					<pre id = "dimeReturn"></pre>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<label>Nickels</label>
+					<pre id = "nickelReturn"></pre>
+				</div>
+				<div class="col-md-6">
+					<label>Pennies</label>
+					<pre id = "pennyReturn"></pre>
+				</div>
+			</div>
+		</div>
+			<script type="text/javascript" src='index.js'></script>
+</fieldset>			
+</body>
+
+ </html>
